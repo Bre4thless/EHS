@@ -167,10 +167,10 @@
         font-size: 16px;
       }
     }
-    /* 手机端适配（屏幕宽度≥768px） */
+    /* 手机端适配（屏幕宽度小于768px） */
     @media (max-width: 768px) {
       .image-container {
-        grid-template-columns: repeat(3, 1fr); /* 手机端3列布局 */
+        grid-template-columns: repeat(3, 1fr) !important; /* 手机端3列布局 */
       }
     }
   </style>
