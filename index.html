@@ -55,7 +55,7 @@
     /* 图片区域样式 */
     .images-container {
       display: grid;
-      grid-template-columns: 1fr; /* 手机端默认1列 */
+      grid-template-columns: 2fr; /* 手机端默认1列 */
       gap: 25px;
       margin-bottom: 40px;
     }
@@ -119,7 +119,7 @@
     }
 
     /* PC端适配（屏幕宽度≥768px） */
-    @media (min-width: 400px) {
+    @media (min-width: 200px) {
       .title-container {
         margin-bottom: 40px;
       }
@@ -134,7 +134,7 @@
       }
 
       .images-container {
-        grid-template-columns: repeat(4, 1fr); /* PC端2列布局 */
+        grid-template-columns: repeat(4, 4fr); /* PC端2列布局 */
         gap: 30px;
         max-width: 1000px;
         margin: 0 auto 50px;
