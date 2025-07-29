@@ -119,7 +119,7 @@
     }
 
     /* PC端适配（屏幕宽度≥768px） */
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       .title-container {
         margin-bottom: 40px;
       }
@@ -134,14 +134,14 @@
       }
 
       .images-container {
-        grid-template-columns: repeat(4, 1fr); /* PC端2列布局 */
+        grid-template-columns: repeat(4, 1fr); /* PC端4列布局 */
         gap: 30px;
         max-width: 1000px;
         margin: 0 auto 50px;
       }
 
       .image-item img {
-        max-width: 100%;
+        max-width: 350px;
       }
 
       .img-text-cn {
@@ -165,6 +165,12 @@
 
       .contact-text {
         font-size: 16px;
+      }
+    }
+    /* 手机端适配（屏幕宽度≥768px） */
+    @media (max-width: 768px) {
+      .image-container {
+        grid-template-columns: repeat(3, 1fr); /* 手机端3列布局 */
       }
     }
   </style>
